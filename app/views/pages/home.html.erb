@@ -2,9 +2,13 @@
   <h1>Welcome to Fitsmind Gym!</h1>
   <div class="card-home">
     <%= image_tag "https://static.pexels.com/photos/414029/pexels-photo-414029.jpeg", id: "img-home" %>
-    <div class="links">
-      <%= link_to "Sign-up", new_user_registration_path, class: "btn btn-success card-registration" %>
-      <p><%= link_to "Login", new_user_session_path, class: "card-session" %></p>
-    </div>
+    <%# if user_signed_in? %>
+      <%# link_to "Messages", %>
+    <%# else %>
+      <div class="links">
+        <%= link_to "Sign-up", new_user_registration_path, class: "btn btn-success card-registration" %>
+        <p><%= link_to "Login", new_user_session_path, class: "card-session" %></p>
+      </div>
+    <%# end %>
   </div>
 </div>
