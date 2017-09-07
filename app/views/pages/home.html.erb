@@ -1,2 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container text-center">
+  <h1>Welcome to Fitsmind Gym!</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="card-home">
+        <%= image_tag "https://static.pexels.com/photos/17840/pexels-photo.jpg", id: "img-home" %>
+        <div class="links">
+          <%= link_to "User sign-up", new_user_registration_path, class: "btn btn-primary card-registration" %>
+          <p><%= link_to "Already a user?", new_user_session_path, class: "card-session"  %></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="card-home">
+        <%= image_tag "https://static.pexels.com/photos/414029/pexels-photo-414029.jpeg", id: "img-home" %>
+        <div class="links">
+          <%= link_to "Trainer sign-up", new_trainer_registration_path, class: "btn btn-success card-registration" %>
+          <p><%= link_to "Already a trainer?", new_trainer_session_path, class: "card-session" %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

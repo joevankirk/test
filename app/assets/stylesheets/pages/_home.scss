@@ -1,1 +1,18 @@
 // Specific CSS for your home-page
+.card-home {
+  padding-top: 30px;
+}
+
+#img-home {
+  width: 400px;
+  border-radius: 4px;
+}
+
+.links {
+  padding-top: 10px;
+  p {
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 5px;
+  }
+}
