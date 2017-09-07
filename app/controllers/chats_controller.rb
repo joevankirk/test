@@ -16,6 +16,13 @@ class ChatsController < ApplicationController
     end
   end
 
+  def index
+    user1_chats = Chat.where(user_1_id: @user.id)
+    user2_chats = Chat.where(user_2_id: @user.id)
+
+    @chats = user1_chats + user2_chats
+  end
+
   private
 
   def chat_params
